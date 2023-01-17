@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	cout << "Enter a number of operation(1-2): ";
+	cout << "Enter a number of operation(1-3): ";
 	int operation;
 	cin >> operation;
 	switch (operation)
@@ -18,10 +18,10 @@ int main() {
 		}
 	}break;
 	case 2: {
-		cout << "Enter start number: ";
+		cout << "Enter a start number: ";
 		uint16_t number_start;
 		cin >> number_start;
-		cout << "Enter finish number: ";
+		cout << "Enter a finish number: ";
 		uint16_t number_finish;
 		cin >> number_finish;
 		cout << "Pair: ";
@@ -81,6 +81,22 @@ int main() {
 			}
 		}
 	}break;
+	case 3: {
+		cout << "Enter a start number: ";
+		uint16_t number_start;
+		cin >> number_start;
+		cout << "Enter a finish number: ";
+		uint16_t number_finish;
+		cin >> number_finish;
+		int sum = 0;
+		for (size_t i = number_start; i < number_finish + 1; i++)
+		{
+							
+			if (i = number_start && i < number_finish + 1) sum += i % 10;
+			cout << sum << "** ";
+			
+		}
+	}
 	default:
 		break;
 	}
