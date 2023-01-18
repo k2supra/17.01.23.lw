@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	cout << "Enter a number of operation(1-3): ";
+	cout << "Enter a number of operation(1-4): ";
 	int operation;
 	cin >> operation;
 	switch (operation)
@@ -89,13 +89,27 @@ int main() {
 		uint16_t number_finish;
 		cin >> number_finish;
 		int sum = 0;
+		cout << "0";
 		for (size_t i = number_start; i < number_finish + 1; i++)
 		{
-							
-			if (i = number_start && i < number_finish + 1) sum += i % 10;
-			cout << sum << "** ";
-			
+			sum += i;
+			cout << " + " << i;
 		}
+		cout << " = " << sum;
+	}break;
+	case 4: {
+		uint16_t number;
+		cin >> number;
+		int sum = 0;
+		do
+		{
+			cout << "Enter a number: ";
+			cin >> number;
+			
+			sum += number;
+		} while (number != 0);
+		
+		cout << " = " << sum;
 	}
 	default:
 		break;
